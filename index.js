@@ -52,7 +52,8 @@ module.exports = ({
       dynamic_template_data: {
         link,
         appName,
-        email: user.get("email") || user.get("username")
+        email: user.get("email") || user.get("username"),
+        referralCode: user.get("referral_code")
       }
     });
   };
